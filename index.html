@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Породы кошек</title>
+    <style>
+        .text-block {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14pt;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-left: 3cm;
+            margin-right: 1cm;
+            margin-top: 2cm;
+            margin-bottom: 2cm;
+            text-indent: 1.5cm;
+        }
+        .text-block p::first-letter {
+            font-size: 18pt;
+            font-weight: bold;
+        }
+
+        /* Стили для таблицы */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        table td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        table td:nth-child(odd) {
+            background-color: white; /* Нечетные столбцы — белый фон */
+        }
+
+        table td:nth-child(even) {
+            background-color: #f2f2f2; /* Четные столбцы — светлый фон */
+            text-align: center;
+        }
+
+        table td:first-child {
+            text-align: justify;
+        }
+
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        img.breed-image {
+            max-width: 300px;
+            height: auto;
+            float: left;
+            margin: 10px 20px 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2a7ae2;
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        ul li::before {
+            content: "• ";
+            color: #2a7ae2;
+        }
+
+        ol li::before {
+            content: counter(list-item) ". ";
+        }
+
+        img[alt="Персидская кошка"] {
+            border: 2px solid #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2a7ae2;
+            text-transform: uppercase;
+        }
+
+        .highlight.special {
+            color: #e22a2a;
+        }
+
+        .centered-heading {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Породы кошек</h1>
+    </header>
+    
+    <nav>
+        <a href="#persian">Персидская кошка</a>
+        <a href="#maine-coon">Мейн-кун</a>
+        <a href="#bengal">Бенгальская кошка</a>
+        <a href="javascript:void(0);" onclick="goToExternalSite()">Другие породы</a> 
+  
+
+    <script>
+        function goToExternalSite() {
+            let userConfirmed = confirm("Вы хотите перейти на внешний сайт?");
+            if (userConfirmed) {
+                window.location.href = "https://www.purina.ru/find-a-pet/cat-breeds";
+            }
+        }
+    </script>
+    </nav>
+ <button onclick="changeTextContent()">Изменить текст</button>
+    <button onclick="changeTextBlockBackgroundColor()">Изменить стиль</button>
+    <div class="text-block" id="persian">
+        <h2><i>Персидская кошка</i></h2>
+        <img src="https://zoo-vision.com/images/veter75.webp" alt="Персидская кошка" class="breed-image">
+        <p>Персидская - одна из самых популярных пород кошек в мире.В целом кошки этой породы довольно своенравны и упрямы. При этом они довольно уравновешены. Они не склонны к активной агрессии, и хотя могут за себя постоять, чаще просто избегают контактов с теми, кто им не нравится. Иногда могут мстить.
+
+Очень спокойны. Их голос редко слышится. Персы спокойно и настойчиво просят обратить внимание на них: они сидят около хозяина и пристально глядят ему в лицо. Они сопровождают всех домашних из комнаты в комнату. Не боятся детей, но и большой любви к ним не питают.
+
+Несмотря на то, что персы считаются вечно лежащими «диванными» кошками, они могут быть достаточно подвижны, когда с ними играют. Даже взрослые кошки с воодушевлением носятся за мячиком. Также любят ловить насекомых, случайно залетевших в дом.
+
+Персы любопытны от природы, и любят обследовать все новые и незнакомые для них уголки комнаты Эти пушистые создания просто созданы для домашнего содержания - они спокойны, уравновешенны и умны, при этом очень любят пет-родителей и готовы поддержать их в трудную минуту. Основная информация. Другое название: перс. Высота в холке: до 30 см. Вес: 3,5-7 кг. Тип шерсти: длинная, с густым подшерстком</p>
+    </div>
+
+    <div id="maine-coon" class="text-block"> 
+        <h2><strong>Мейн-кун</strong></h2>
+        <img src="https://api.zapovednik96.ru/upload/iblock/f0e/shutterstock_2441858947.jpg" alt="Мейн-кун" class="breed-image pulse">
+        <p>Мейн-кун — самая крупная домашняя порода кошек. Мейн-куны могут быть любого окраса, типичного для обычных домашних кошек, а вот искусственные окрасы, говорящие о возможной примеси других пород, такие как шоколад, лаванда, колор-поинт или типпинг, принимаются не во всех федерациях. Например, колор-поинт в окрасах мейн-кунов принят только в TICA. Самым распространённым рисунком в породе является коричневый и дымчатый табби, в России известный как «дикий» окрас.
+
+Как правило глаза яркие, расцветка варьируется от голубых и зелёных до золотых[5]. Все цвета глаз принимаются в соответствии со стандартами окраса, за исключением случаев появления голубых или гетерохромных (то есть двух глаз разных цветов) у кошек, имеющих окрас шерсти, отличный от белого.
+
+Шерсть мейн-куна отлично приспособлена к суровому и холодному климату. Плотный подшёрсток на животе и удлинённый волос на задних лапах позволяют сидеть на снегу и льду, полидактилия и длинные пучки волос между подушечками лап, являющиеся обязательным признаком породы, облегчают ходьбу по снегу и их часто сравнивают со снегоступами, так как они увеличивают площадь, придавая лапам дополнительную устойчивость без значительного дополнительного веса. Уши с кисточками и удлинёнными пучками шерсти, растущими изнутри, помогают сохранить тепло в ушах.У них мощное тело с широкой грудной клеткой и массивной головой. Отличительная особенность (кроме размера) — длинная шерсть, пушистый хвост и кисточки на ушах, которые делают мейн-куна похожим на рысь. У роскошных и величественных кошек очень выразительные глаза. В холодную погоду мейн-куны оборачивают хвост вокруг тела, чтобы согреться</p>
+    </div>
+
+    <div id="bengal" class="text-block">
+        <h2>Бенгальская кошка</h2>
+        <img src="https://lapkins.ru/upload/iblock/77c/77cada2ac383c8045d04fce954f62173.jpg" alt="Бенгальская кошка" class="breed-image">
+        <p>Бенгальские кошки очень «разговорчивы», они охотно общаются со своим владельцем. Могут быть настойчивы в просьбах покормить или поиграть с ними.Здоровые уши и глаза также не требуют особенного ухода. Рекомендуется посещать ветеринарного врача один раз в год для плановой вакцинации. В рамках осмотра специалист заглянет в уши кошки и скажет, нужно ли их мыть. Здоровые уши периодически можно промывать лосьоном для ухода за ушами. Он не содержит гормонов и антибиотиков и применяется только в гигиенических целях. Поверхностно-активные вещества в таком лосьоне поднимают ушную серу и другие выделения из глубокого горизонтального слухового прохода наверх, в его вертикальную часть, где их можно легко удалить ватным диском.
+
+В период полового созревания темпераментные бенгальские кошки и коты могут устраивать настоящие концерты. Поэтому, если владелец не собирается заниматься разведением, лучше стерилизовать их в возрасте полугода. Нестерилизованные кошки бенгальской породы могут иметь изнуряющие частые течки, плохо есть и худеть в этот период, метить территорию как коты. То же касается и некастрированных котов. Коты в период пубертата могут заявить о своих правах на «командование» семейным прайдом или начать активно охотиться на ноги и руки владельца. Такое альфа-поведение самцов бенгальской кошки корректируется после кастрации.</p>
+    </div>
+
+    <section id="table" class="text-block">
+        <h2 class="centered-heading">Характеристики пород кошек</h2>
+        <table id="breed-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Порода</th>
+                    <th onclick="sortTable(1)">Шерсть</th>
+                    <th onclick="sortTable(2)">Размер</th>
+                    <th onclick="sortTable(3)">Характер</th>
+                    <th onclick="sortTable(4)">Уход</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Персидская</td>
+                    <td>Длинная</td>
+                    <td>Средний</td>
+                    <td>Спокойный, ласковый</td>
+                    <td>Регулярный уход за шерстью</td>
+                </tr>
+                <tr>
+                    <td>Мейн-кун</td>
+                    <td>Длинная</td>
+                    <td>Крупный</td>
+                    <td>Дружелюбный, умный</td>
+                    <td>Минимальный уход</td>
+                </tr>
+                <tr>
+                    <td>Бенгальская</td>
+                    <td>Короткая</td>
+                    <td>Средний</td>
+                    <td>Активный, игривый</td>
+                    <td>Небольшой уход</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+          // Добавление кнопки для удаления блока
+        function addRemoveButton() {
+            let blocks = document.querySelectorAll(".text-block");
+            blocks.forEach(block => {
+                let button = document.createElement("button");
+                button.textContent = "Удалить";
+                button.onclick = () => block.remove();
+                block.appendChild(button);
+            });
+        }
+        addRemoveButton();
+
+        // Изменяем текст в блоке с id 'persian'
+        function changeTextContent() {
+            let persianBlock = document.getElementById("persian");
+            if (persianBlock) {
+                persianBlock.innerHTML = "<h2>Персидская кошка – исключительно домашнее животное в буквальном понимании этого определения. Представители этой породы утратили способность к охоте, они не могут быстро бегать и совершать высокие прыжки. Прогулки на улице вашему любимцу не понадобятся.</h2>";
+            }
+        }
+
+        // Изменяем стиль блоков .text-block
+        function changeTextBlockBackgroundColor() {
+            let blocks = document.querySelectorAll(".text-block");
+            blocks.forEach(block => {
+                block.style.backgroundColor = "lightblue";
+            });
+        }
+// Функция сортировки таблицы
+        function sortTable(n) {
+            let table = document.getElementById("breed-table");
+            let rows = Array.from(table.rows).slice(1);
+            let isAscending = table.rows[0].cells[n].classList.toggle("ascending");
+            rows.sort((row1, row2) => {
+                let cell1 = row1.cells[n].innerText;
+                let cell2 = row2.cells[n].innerText;
+                return isAscending ? cell1.localeCompare(cell2) : cell2.localeCompare(cell1);
+            });
+            rows.forEach(row => table.appendChild(row));
+        }
+
+
+        
+    </script>
+</body>
+</html>
